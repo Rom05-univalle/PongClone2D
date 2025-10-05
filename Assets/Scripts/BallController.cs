@@ -40,11 +40,11 @@ public class BallController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // Si choca con la raqueta, ajusta ángulo según punto de impacto y aumenta velocidad
+        // Si choca con la raqueta, ajusta angulo segen punto de impacto y aumenta velocidad
         if (col.gameObject.CompareTag("Paddle"))
         {
             float paddleHeight = col.collider.bounds.size.y;
-            float y = (transform.position.y - col.transform.position.y) / (paddleHeight / 2f); // -1..1
+            float y = (transform.position.y - col.transform.position.y) / (paddleHeight / 2f);
 
             float dirX = -Mathf.Sign(rb.velocity.x); // invierte la componente X
             Vector2 dir = new Vector2(dirX, y).normalized;

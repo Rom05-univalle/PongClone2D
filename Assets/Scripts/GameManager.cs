@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
                 PlayerPrefs.Save();
             }
 
-            // Aquí podrías mostrar pantalla de Game Over. Por ahora reiniciamos
+            //muestra pantalla de Game Over - Por ahora solo se reinicia
             leftScore = 0;
             rightScore = 0;
             UpdateUI();

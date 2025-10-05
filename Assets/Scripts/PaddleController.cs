@@ -7,7 +7,7 @@ public class PaddleController : MonoBehaviour
     public float speed = 8f;
     public KeyCode upKey = KeyCode.W;
     public KeyCode downKey = KeyCode.S;
-    public float yLimit = 4.2f; // ajusta según tu cámara
+    public float yLimit = 4.2f; // ajusta segun la camara
 
     void Update()
     {
